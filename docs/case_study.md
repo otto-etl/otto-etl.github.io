@@ -1,0 +1,26 @@
+---
+title: Case Study
+description: otto ETL Technical Case Study - Challenges, System Design, and Engineering Decisions
+---
+
+<!-- import Wave from '@site/src/components/Wave.js'; -->
+
+### Introduction
+
+Otto is a free, open-source automated ETL workflow manager that orchestrates the gathering, transforming, and loading of data at scheduled intervals. Otto emphasizes ease of use for JavaScript developers and clear observability into their data processing: errors or bottlenecks their workflow is running into, why they happened, and the details they need to fix them.
+
+### Problem Domain
+
+#### Workflows
+
+A workflow is a series of tasks executed in sequence from the beginning to the end of a working process. “Workflow” is a broad term, and workflows look different across different industries. One of the creators of Otto worked as a data analyst at a pharmaceutical company. Analyzing this data involved executing many critical tasks repeatedly, in exacting detail. But humans are not at their best when performing this type of repetitive work; mistakes can be introduced at every step of this process. According to the Harvard Business Review 1, US companies lose over $3 trillion a year due to mistakes in data. These day-to-day data processing challenges motivated us to create a tool specifically focused on data-intensive workflows.
+
+Consider a hypothetical pharmaceutical company, Pharma Co. To decide which drug manufacturers to work with, Pharma Co. must work extensively with multiple sources of data. The FDA gathers data about manufacturers, such as inspections and complaints, and Pharma Co. collects and combines this data to add to its own database for later analysis. Initially, Pharma Co. did this manually. A developer would query numerous FDA database endpoints for information on citations and inspections of drug manufacturing facilities. The developer would send this information to clerical staff, who would clean the data and add it to Pharma Co’s internal database. Analysts would then use this data to determine which manufacturers best fit Pharma Co’s needs.
+
+#### ETL
+
+#### Existing Solutions
+
+#### Introducing Otto
+
+### Prototype
