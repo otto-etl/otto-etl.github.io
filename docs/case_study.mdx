@@ -5,6 +5,8 @@ description: otto ETL Technical Case Study - Challenges, System Design, and Engi
 
 <!-- import Wave from '@site/src/components/Wave.js'; -->
 
+import ImageBox from "@site/src/components/ImageBox.js";
+
 ### Introduction
 
 Otto is a free, open-source automated ETL workflow manager that orchestrates the gathering, transforming, and loading of data at scheduled intervals. Otto emphasizes ease of use for JavaScript developers and clear observability into their data processing: errors or bottlenecks their workflow is running into, why they happened, and the details they need to fix them.
@@ -18,6 +20,8 @@ A workflow is a series of tasks executed in sequence from the beginning to the e
 Consider a hypothetical pharmaceutical company, Pharma Co. To decide which drug manufacturers to work with, Pharma Co. must work extensively with multiple sources of data. The FDA gathers data about manufacturers, such as inspections and complaints, and Pharma Co. collects and combines this data to add to its own database for later analysis. Initially, Pharma Co. did this manually. A developer would query numerous FDA database endpoints for information on citations and inspections of drug manufacturing facilities. The developer would send this information to clerical staff, who would clean the data and add it to Pharma Co’s internal database. Analysts would then use this data to determine which manufacturers best fit Pharma Co’s needs.
 
 #### ETL
+
+<ImageBox caption="test image box feature" src="/img/graphs/workflow.png" />
 
 #### Existing Solutions
 

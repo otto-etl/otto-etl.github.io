@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "@theme/Layout";
 import Wave from "../components/Wave";
 import { Container } from "@mui/system";
-const Presentation = () => {
+const Guide = () => {
   return (
     <Layout
       title="Presentation"
@@ -17,20 +17,11 @@ const Presentation = () => {
           marginTop: "60px",
         }}
       >
-        <h1>otto ETL Presentation</h1>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/uHGShqcAHlQ"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+        <h1>How to use otto</h1>
       </Container>
       <Wave />
     </Layout>
   );
 };
 
-export default Presentation;
+export default Guide;

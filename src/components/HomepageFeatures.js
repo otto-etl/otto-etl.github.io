@@ -1,10 +1,7 @@
+import { Container } from "@mui/system";
 import React from "react";
 const HomepageFeatures = () => {
-  return (
-    <div>
-      <img height="400px" src="gif/homepage_workflow_fast.gif" />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default HomepageFeatures;

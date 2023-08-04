@@ -4,6 +4,7 @@ import Member from "../components/member";
 import Stack from "@mui/material/Stack";
 import { Box } from "@mui/system";
 import Wave from "../components/Wave";
+import { Container } from "@mui/system";
 const team = [
   {
     name: "Jing Zhu",
@@ -42,18 +43,30 @@ const team = [
 const Team = () => {
   return (
     <Layout>
-      <h1 style={{ textAlign: "center" }}>otto ETL Development Team</h1>
-      <Stack
-        direction="row"
-        spacing={1}
-        maxWidth="auto"
-        textAlign="center"
-        alignItems="center"
+      <Container
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "30px",
+          marginTop: "60px",
+          overflow: "scroll",
+        }}
       >
-        {team.map((member) => (
-          <Member key={member.name} member={member} />
-        ))}
-      </Stack>
+        <h1>otto ETL Development Team</h1>
+        <Stack
+          sx={{ mt: 10 }}
+          direction="row"
+          spacing={1.5}
+          maxWidth="auto"
+          textAlign="center"
+          alignItems="center"
+        >
+          {team.map((member) => (
+            <Member key={member.name} member={member} />
+          ))}
+        </Stack>
+      </Container>
       <Wave />
     </Layout>
   );

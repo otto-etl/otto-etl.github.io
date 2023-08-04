@@ -66,6 +66,9 @@ const config = {
         logo: {
           alt: "otto logo",
           src: "img/ottoLogo.svg",
+          srcDark: "img/ottoLogo_dark.svg",
+          width: 44,
+          height: 44,
         },
         items: [
           {
@@ -80,10 +83,17 @@ const config = {
             label: "Presentation",
           },
           {
+            type: "doc",
+            docId: "user_guide",
+            position: "right",
+            label: "User Guide",
+          },
+          {
             to: "team",
             position: "right",
             label: "The Team",
           },
+
           {
             href: "https://github.com/Runtime-Terrors-2305",
             label: "GitHub",
