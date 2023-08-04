@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "@theme/Layout";
-import Wave from "../components/Wave";
+
 import { Container } from "@mui/system";
 const Presentation = () => {
   return (
@@ -28,7 +28,6 @@ const Presentation = () => {
           allowfullscreen
         ></iframe>
       </Container>
-      <Wave />
     </Layout>
   );
 };

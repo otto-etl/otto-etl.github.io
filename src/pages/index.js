@@ -1,12 +1,10 @@
 import React from "react";
-import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "../components/HomepageFeatures";
-import Wave from "../components/Wave";
 import Button from "@mui/material/Button";
+import Features from "../components/Features";
 import { Container } from "@mui/system";
-import { Stack } from "@mui/system";
+import { Typography } from "@mui/material";
 
 export default function Home() {
   return (
@@ -21,11 +19,20 @@ export default function Home() {
           marginTop: "60px",
         }}
       >
-        <h1 className="otto_title">A better way to build ETL pipelines</h1>
-        <p className="otto_subtitle">
+        <Typography
+          variant="h1"
+          sx={{
+            textAlign: "center",
+            fontWeight: "bold",
+            color: "var(--ifm-color-primary)",
+          }}
+        >
+          A better way to build ETL pipelines
+        </Typography>
+        <Typography variant="p" component="p" sx={{ textAlign: "center" }}>
           Otto is an open source <strong>ETL</strong> automation tool designed
           for <strong>Javascript</strong> developers
-        </p>
+        </Typography>
         <Link to="/case_study" className="hover:no-underline">
           <Button
             sx={{
@@ -37,15 +44,42 @@ export default function Home() {
           </Button>
         </Link>
         <img src="gif/homepage_workflow_fast.gif" />
-        <h2>Why use otto?</h2>
-        <p>
+        <Typography
+          variant="h2"
+          sx={{ color: "var(--ifm-color-primary)", textAlign: "center" }}
+        >
+          Why use otto?
+        </Typography>
+        <Typography variant="p" component="p" sx={{ textAlign: "center" }}>
           Otto allows you to extract, transform and load data within an
           intuitive node-based UI. Build automated workflows that are executed
-          at scheduled intervals and track your workflows’ performance with
+          at scheduled intervals and track your workflows' performance with
           logging and metrics.
-        </p>
+        </Typography>
+        <Features />
+        <Typography
+          variant="h2"
+          sx={{ color: "var(--ifm-color-primary)", textAlign: "center" }}
+        >
+          Logging
+        </Typography>
+        <Typography variant="p" component="p" sx={{ textAlign: "center" }}>
+          Workflow logs allow you to review previous executions and diagnose
+          workflow failures
+        </Typography>
+        <img src="img/screenshots/entire_workflow.png" />
+        <Typography
+          variant="h2"
+          sx={{ color: "var(--ifm-color-primary)", textAlign: "center" }}
+        >
+          Metrics
+        </Typography>
+        <Typography variant="p" component="p" sx={{ textAlign: "center" }}>
+          Metrics allow you to view the performance of your workflow and
+          pinpoint issues when things go wrong
+        </Typography>
+        <img src="img/screenshots/metric_page.png" />
       </Container>
-      <Wave />
     </Layout>
   );
 }

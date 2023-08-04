@@ -3,7 +3,7 @@ import Layout from "@theme/Layout";
 import Member from "../components/member";
 import Stack from "@mui/material/Stack";
 import { Box } from "@mui/system";
-import Wave from "../components/Wave";
+
 import { Container } from "@mui/system";
 const team = [
   {
@@ -67,7 +67,6 @@ const Team = () => {
           ))}
         </Stack>
       </Container>
-      <Wave />
     </Layout>
   );
 };

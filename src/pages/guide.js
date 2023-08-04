@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "@theme/Layout";
-import Wave from "../components/Wave";
+
 import { Container } from "@mui/system";
 const Guide = () => {
   return (
@@ -19,7 +19,6 @@ const Guide = () => {
       >
         <h1>How to use otto</h1>
       </Container>
-      <Wave />
     </Layout>
   );
 };
