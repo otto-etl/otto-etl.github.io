@@ -2,13 +2,12 @@ import React from "react";
 import Layout from "@theme/Layout";
 import Member from "../components/member";
 import Stack from "@mui/material/Stack";
-import { Box } from "@mui/system";
 
 import { Container } from "@mui/system";
 const team = [
   {
     name: "Jing Zhu",
-    image: "img/members/Jing.JPG",
+    image: "img/members/Jing.jpeg",
     website: "",
     github: "https://github.com/JingZhu89",
     linkedin: "https://www.linkedin.com/in/jingzhumsscm/",
@@ -16,27 +15,27 @@ const team = [
   },
   {
     name: "Joe Webster",
-    image: "",
+    image: "img/members/Joe.jpeg",
     website: "/",
-    github: "",
-    linkedin: "",
-    email: "",
+    github: "https://github.com/joewebsta",
+    linkedin: "linkedin.com/in/joeswebster/",
+    email: "Joseph.scott.webster@gmail.com",
   },
   {
     name: "Katherine Morayati",
-    image: "",
+    image: "img/members/Katherine.jpeg",
     website: "/",
-    github: "",
+    github: "https://github.com/katstasaph",
     linkedin: "",
-    email: "",
+    email: "katherinemorayati@gmail.com",
   },
   {
     name: "Matthew Sisserson",
-    image: "",
+    image: "img/members/Mat.jpeg",
     website: "/",
-    github: "",
-    linkedin: "",
-    email: "",
+    github: "https://github.com/MASisserson",
+    linkedin: "https://linkedin.com/in/matthew-sisserson-077b54a0",
+    email: "masisserson@gmail.com",
   },
 ];
 
