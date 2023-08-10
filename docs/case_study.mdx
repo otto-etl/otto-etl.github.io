@@ -292,7 +292,7 @@ Branching workflows also created a significant dependency challenge. When a work
 
 ##### Branch out and merge back
 
-To solve this problem, we created a recursive algorithm. A\*\* \*\*function, `runWorkflow`, is called on every load node, and does the following:
+To solve this problem, we created a recursive algorithm. A function, `runWorkflow`, is called on every load node, and does the following:
 
 - For a given node, the function looks for all the previous edges that have the current node as their target, finds the node connected to the source side of that edge.
 - The function calls itself recursively against each of these source nodes. Each recursive call is wrapped inside a `Promise.all` invocation, allowing for asynchronous, concurrent execution of branches.
