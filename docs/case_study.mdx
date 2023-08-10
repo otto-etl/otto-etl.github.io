@@ -301,8 +301,6 @@ To solve this problem, we created a recursive algorithm. A function, `runWorkflo
 
 We later memoized the Promises created for a node ID in this function to ensure that nodes were not executed repeatedly if they appeared in multiple branches. If a node ID has an existing promise in the memoization table, we wait for that Promise to resolve (if it’s settled, then it resolves immediately) instead of unnecessarily re-executing the node.
 
-**Workflow Orchestration Algorithm with Memoization**
-
 ##
 
 <ImageBox
@@ -320,15 +318,24 @@ One limitation of this scheduling system is that when the server restarts, any c
 
 1. Whenever a cron job is executed, we update the database with when the next execution should occur.
 
-<ImageBox caption="scheduling1" src="schedule1.png" />
+<ImageBox
+  caption="Scheduling with without server restarts"
+  src="schedule1.png"
+/>
 
 2. If the server restarts before the next execution time, our application automatically checks for all currently active workflows and schedules new cron jobs at their respective start times.
 
-<ImageBox caption="scheduling2" src="schedule2.png" />
+<ImageBox
+  caption="Scheduling with server restart before next cron job execution"
+  src="schedule2.png"
+/>
 
 3. If the server has been down long enough that a workflow’s next scheduled execution time has already passed, we calculate the next appropriate start time according to the interval and reschedule cron jobs accordingly.
 
-<ImageBox caption="scheduling3" src="schedule3.png" />
+<ImageBox
+  caption="Scheduling with server restart after next cron job execution"
+  src="schedule3.png"
+/>
 
 #### Workflow Validation
 
