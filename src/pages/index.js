@@ -86,7 +86,7 @@ export default function Home() {
           Workflow logs allow you to review previous executions and diagnose
           workflow failures
         </Typography>
-        <img src="img/screenshots/entire_workflow.png" />
+        <img src="img/graphs/workflow.png" />
         <Typography
           variant="h2"
           sx={{ color: "var(--ifm-color-primary)", textAlign: "center" }}
@@ -97,7 +97,7 @@ export default function Home() {
           Metrics allow you to view the performance of your workflow and
           pinpoint issues when things go wrong
         </Typography>
-        <img src="img/screenshots/metric_page.png" />
+        <img src="img/graphs/metricsSS.png" />
       </Container>
     </Layout>
   );
