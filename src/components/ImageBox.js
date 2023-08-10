@@ -2,9 +2,9 @@ import React from "react";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 const ImageBox = ({ src, caption }) => {
   return (
-    <figure>
-      <img src={useBaseUrl(src)} alt={caption} />
-      <figcaption>{caption}</figcaption>
+    <figure style={{ textAlign: "center" }}>
+      <img src={useBaseUrl(`/img/graphs/${src}`)} alt={caption} />
+      <figcaption style={{ marginBottom: "20px" }}>{caption}</figcaption>
     </figure>
   );
 };
