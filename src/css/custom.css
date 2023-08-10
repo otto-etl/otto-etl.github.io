@@ -76,11 +76,20 @@ h6 {
 }
 
 .navbar__link {
-  /* color: var(--ifm-navbar-link-color); */
-  /* font-weight: var(--ifm-font-weight-semibold); */
-  /* color: #3c4bcb; */
   display: flex;
   align-items: center;
+  /* color: var(--ifm-color-primary-darkest); */
+}
+
+.navbar {
+  background-color: #ebedfe;
+  box-shadow: none;
+}
+
+@media (max-width: 996px) {
+  .navbar__link {
+    display: none;
+  }
 }
 
 /**
@@ -92,13 +101,14 @@ h6 {
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #3c4bcb;
-  --ifm-color-primary-outline: #16238d;
-  --ifm-color-primary-dark: #2433b2;
-  --ifm-color-primary-darker: #16238d;
-  --ifm-color-primary-darkest: #0b1565;
   --ifm-color-primary-light: #6673e1;
   --ifm-color-primary-lighter: #8a95ef;
   --ifm-color-primary-lightest: #ebedff;
+  --ifm-color-primary-dark: #2433b2;
+  --ifm-color-primary-darker: #16238d;
+  --ifm-color-primary-darkest: #0b1565;
+  --ifm-color-primary-outline: #16238d;
+  --ifm-navbar-link-color: #0b1565;
   --ifm-code-font-size: 95%;
 
   --ifm-background-color: linear-gradient(

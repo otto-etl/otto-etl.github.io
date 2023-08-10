@@ -62,11 +62,10 @@ const config = {
       },
       navbar: {
         hideOnScroll: true,
-        // title: "otto ETL",
         logo: {
           alt: "otto logo",
-          src: "img/otto-logo-light.jpg",
-          srcDark: "img/otto-logo-dark.svg",
+          src: "img/otto-logo.svg",
+          srcDark: "img/otto-logo.svg",
         },
         items: [
           {

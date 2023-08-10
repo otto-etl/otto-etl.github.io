@@ -4,7 +4,7 @@ import Layout from "@theme/Layout";
 import Button from "@mui/material/Button";
 import Features from "../components/Features";
 import { Container } from "@mui/system";
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 export default function Home() {
   return (
@@ -15,28 +15,41 @@ export default function Home() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          gap: "30px",
-          marginTop: "60px",
+          marginTop: "80px",
         }}
       >
         <Typography
           variant="h1"
           sx={{
             textAlign: "center",
-            fontWeight: "bold",
+            fontWeight: "600",
             color: "var(--ifm-color-primary)",
+            fontSize: "72px",
+            maxWidth: "750px",
           }}
         >
           A better way to build ETL pipelines
         </Typography>
-        <Typography variant="p" component="p" sx={{ textAlign: "center" }}>
+        <Typography
+          sx={{
+            textAlign: "center",
+            fontSize: "22px",
+            maxWidth: "460px",
+            marginTop: "50px",
+          }}
+        >
           Otto is an open source <strong>ETL</strong> automation tool designed
           for <strong>Javascript</strong> developers
         </Typography>
         <Link to="/case_study" className="hover:no-underline">
           <Button
+            size="large"
             sx={{
               background: "var(--ifm-color-primary)",
+              margin: "30px 0 80px",
+              "&:hover": {
+                backgroundColor: "#2433B2",
+              },
             }}
             variant="contained"
           >
@@ -44,18 +57,24 @@ export default function Home() {
           </Button>
         </Link>
         <img src="gif/homepage_workflow_fast.gif" />
-        <Typography
-          variant="h2"
-          sx={{ color: "var(--ifm-color-primary)", textAlign: "center" }}
+        <Box
+          sx={{
+            background: "#F6F6F6",
+          }}
         >
-          Why use otto?
-        </Typography>
-        <Typography variant="p" component="p" sx={{ textAlign: "center" }}>
-          Otto allows you to extract, transform and load data within an
-          intuitive node-based UI. Build automated workflows that are executed
-          at scheduled intervals and track your workflows' performance with
-          logging and metrics.
-        </Typography>
+          <Typography
+            variant="h2"
+            sx={{ color: "var(--ifm-color-primary)", textAlign: "center" }}
+          >
+            Why use otto?
+          </Typography>
+          <Typography variant="p" component="p" sx={{ textAlign: "center" }}>
+            Otto allows you to extract, transform and load data within an
+            intuitive node-based UI. Build automated workflows that are executed
+            at scheduled intervals and track your workflows' performance with
+            logging and metrics.
+          </Typography>
+        </Box>
         <Features />
         <Typography
           variant="h2"
