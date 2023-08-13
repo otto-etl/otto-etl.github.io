@@ -25,8 +25,14 @@ export default function Home() {
             textAlign: "center",
             fontWeight: "600",
             color: "var(--ifm-color-primary)",
-            fontSize: "72px",
             maxWidth: "750px",
+            fontSize: "36px",
+            "@media (min-width:640px)": {
+              fontSize: "48px",
+            },
+            "@media (min-width:1024px)": {
+              fontSize: "72px",
+            },
           }}
         >
           A better way to build ETL pipelines
@@ -34,9 +40,12 @@ export default function Home() {
         <Typography
           sx={{
             textAlign: "center",
-            fontSize: "22px",
+            fontSize: "18px",
             maxWidth: "460px",
             marginTop: "50px",
+            "@media (min-width:640px)": {
+              fontSize: "22px",
+            },
           }}
         >
           Otto is an open source <strong>ETL</strong> automation tool designed
@@ -58,12 +67,15 @@ export default function Home() {
           </Button>
         </Link>
         <Box sx={{ marginBottom: "150px" }}>
-          <img src="gif/homepage_workflow_fast.gif" />
+          <img
+            src="gif/homepage_workflow_fast.gif"
+            style={{ borderRadius: "8px" }}
+          />
         </Box>
         <Box
           sx={{
-            background: "#F6F6F6",
-            padding: "140px 0",
+            background: "#f1f4fd",
+            padding: "140px 20px",
             width: "100%",
             borderRadius: 4,
           }}
@@ -75,6 +87,13 @@ export default function Home() {
               textAlign: "center",
               fontWeight: "600",
               marginBottom: "30px",
+              fontSize: "36px",
+              "@media (min-width:640px)": {
+                fontSize: "48px",
+              },
+              "@media (min-width:1024px)": {
+                fontSize: "60px",
+              },
             }}
           >
             Why use Otto?
@@ -84,9 +103,12 @@ export default function Home() {
             component="p"
             sx={{
               margin: "0 auto",
-              fontSize: "22px",
+              fontSize: "18px",
               maxWidth: "640px",
               textAlign: "center",
+              "@media (min-width:640px)": {
+                fontSize: "22px",
+              },
             }}
           >
             Otto allows you to extract, transform and load data within an
@@ -102,6 +124,13 @@ export default function Home() {
               color: "var(--ifm-color-primary)",
               textAlign: "center",
               fontWeight: "600",
+              fontSize: "36px",
+              "@media (min-width:640px)": {
+                fontSize: "48px",
+              },
+              "@media (min-width:1024px)": {
+                fontSize: "60px",
+              },
             }}
           >
             ETL Features
@@ -120,6 +149,13 @@ export default function Home() {
               color: "var(--ifm-color-primary)",
               textAlign: "center",
               fontWeight: "600",
+              fontSize: "36px",
+              "@media (min-width:640px)": {
+                fontSize: "48px",
+              },
+              "@media (min-width:1024px)": {
+                fontSize: "60px",
+              },
             }}
           >
             Logging
@@ -137,7 +173,7 @@ export default function Home() {
             Workflow logs allow you to review previous executions and diagnose
             workflow failures
           </Typography>
-          <img src="img/graphs/workflow.png" />
+          <img src="img/graphs/workflow.png" style={{ borderRadius: "8px" }} />
         </Box>
         <Box sx={{ marginBottom: "140px" }}>
           <Typography
@@ -146,6 +182,13 @@ export default function Home() {
               color: "var(--ifm-color-primary)",
               textAlign: "center",
               fontWeight: "600",
+              fontSize: "36px",
+              "@media (min-width:640px)": {
+                fontSize: "48px",
+              },
+              "@media (min-width:1024px)": {
+                fontSize: "60px",
+              },
             }}
           >
             Metrics
@@ -155,15 +198,18 @@ export default function Home() {
             component="p"
             sx={{
               textAlign: "center",
-              fontSize: "22px",
+              fontSize: "18px",
               maxWidth: "660px",
               margin: "30px auto 40px",
+              "@media (min-width:640px)": {
+                fontSize: "22px",
+              },
             }}
           >
             Metrics allow you to view the performance of your workflow and
             pinpoint issues when things go wrong
           </Typography>
-          <img src="img/graphs/metricsSS.png" />
+          <img src="img/graphs/metricsSS.png" style={{ borderRadius: "8px" }} />
         </Box>
       </Container>
     </Layout>

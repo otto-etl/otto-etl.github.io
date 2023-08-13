@@ -8,19 +8,27 @@ const Features = () => {
     border: 1,
     borderColor: "var(--ifm-color-primary-outline)",
     borderRadius: 4,
-    width: "15rem",
     padding: "20px",
     display: "flex",
+    flex: 1,
     flexDirection: "column",
     gap: "15px",
     alignItems: "stretch",
+    margin: 0,
   };
 
   return (
     <Stack
+      className="features"
       sx={{ mt: "40px" }}
-      direction="row"
-      spacing={3}
+      direction={{
+        xs: "column",
+        sm: "column",
+        med: "row",
+        lg: "row",
+      }}
+      // spacing={3}
+      gap="15px"
       maxWidth="auto"
       justifyContent="center"
     >

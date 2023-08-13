@@ -75,10 +75,10 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 
-span,
+/* span,
 p {
-  color: "#333";
-}
+  color: "#333333";
+} */
 
 .navbar__link {
   display: flex;
@@ -96,7 +96,6 @@ p {
     display: none;
   }
 }
-
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to

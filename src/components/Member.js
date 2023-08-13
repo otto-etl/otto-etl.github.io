@@ -5,7 +5,7 @@ import { Box } from "@mui/system";
 import { Stack } from "@mui/system";
 const Member = ({ member }) => {
   return (
-    <Container alignItems="center" justify="center">
+    <Container>
       <Avatar
         src={member.image}
         alt={member.name}
