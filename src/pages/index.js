@@ -10,6 +10,7 @@ export default function Home() {
   return (
     <Layout>
       <Container
+        className="landing-page"
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -56,48 +57,114 @@ export default function Home() {
             Read Case Study
           </Button>
         </Link>
-        <img src="gif/homepage_workflow_fast.gif" />
+        <Box sx={{ marginBottom: "150px" }}>
+          <img src="gif/homepage_workflow_fast.gif" />
+        </Box>
         <Box
           sx={{
             background: "#F6F6F6",
+            padding: "140px 0",
+            width: "100%",
+            borderRadius: 4,
           }}
         >
           <Typography
             variant="h2"
-            sx={{ color: "var(--ifm-color-primary)", textAlign: "center" }}
+            sx={{
+              color: "var(--ifm-color-primary)",
+              textAlign: "center",
+              fontWeight: "600",
+              marginBottom: "30px",
+            }}
           >
-            Why use otto?
+            Why use Otto?
           </Typography>
-          <Typography variant="p" component="p" sx={{ textAlign: "center" }}>
+          <Typography
+            variant="p"
+            component="p"
+            sx={{
+              margin: "0 auto",
+              fontSize: "22px",
+              maxWidth: "640px",
+              textAlign: "center",
+            }}
+          >
             Otto allows you to extract, transform and load data within an
             intuitive node-based UI. Build automated workflows that are executed
             at scheduled intervals and track your workflows' performance with
             logging and metrics.
           </Typography>
         </Box>
-        <Features />
-        <Typography
-          variant="h2"
-          sx={{ color: "var(--ifm-color-primary)", textAlign: "center" }}
+        <Box sx={{ margin: "140px 0" }}>
+          <Typography
+            variant="h2"
+            sx={{
+              color: "var(--ifm-color-primary)",
+              textAlign: "center",
+              fontWeight: "600",
+            }}
+          >
+            ETL Features
+          </Typography>
+
+          <Features />
+        </Box>
+        <Box
+          sx={{
+            marginBottom: "140px",
+          }}
         >
-          Logging
-        </Typography>
-        <Typography variant="p" component="p" sx={{ textAlign: "center" }}>
-          Workflow logs allow you to review previous executions and diagnose
-          workflow failures
-        </Typography>
-        <img src="img/graphs/workflow.png" />
-        <Typography
-          variant="h2"
-          sx={{ color: "var(--ifm-color-primary)", textAlign: "center" }}
-        >
-          Metrics
-        </Typography>
-        <Typography variant="p" component="p" sx={{ textAlign: "center" }}>
-          Metrics allow you to view the performance of your workflow and
-          pinpoint issues when things go wrong
-        </Typography>
-        <img src="img/graphs/metricsSS.png" />
+          <Typography
+            variant="h2"
+            sx={{
+              color: "var(--ifm-color-primary)",
+              textAlign: "center",
+              fontWeight: "600",
+            }}
+          >
+            Logging
+          </Typography>
+          <Typography
+            variant="p"
+            component="p"
+            sx={{
+              textAlign: "center",
+              fontSize: "22px",
+              maxWidth: "460px",
+              margin: "30px auto 40px",
+            }}
+          >
+            Workflow logs allow you to review previous executions and diagnose
+            workflow failures
+          </Typography>
+          <img src="img/graphs/workflow.png" />
+        </Box>
+        <Box sx={{ marginBottom: "140px" }}>
+          <Typography
+            variant="h2"
+            sx={{
+              color: "var(--ifm-color-primary)",
+              textAlign: "center",
+              fontWeight: "600",
+            }}
+          >
+            Metrics
+          </Typography>
+          <Typography
+            variant="p"
+            component="p"
+            sx={{
+              textAlign: "center",
+              fontSize: "22px",
+              maxWidth: "660px",
+              margin: "30px auto 40px",
+            }}
+          >
+            Metrics allow you to view the performance of your workflow and
+            pinpoint issues when things go wrong
+          </Typography>
+          <img src="img/graphs/metricsSS.png" />
+        </Box>
       </Container>
     </Layout>
   );

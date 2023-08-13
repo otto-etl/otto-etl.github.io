@@ -75,6 +75,11 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 
+span,
+p {
+  color: "#333";
+}
+
 .navbar__link {
   display: flex;
   align-items: center;
@@ -118,10 +123,10 @@ h6 {
   );
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --shadow-color: 0deg 0% 0%;
-  --shadow-elevation-medium: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.11),
-    0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.11),
-    2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.11),
-    5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.11);
+  --shadow-elevation-medium: 0px 0.5px 0.6px hsl(var(--shadow-color) / 0.11),
+    0px 1.7px 1.9px -0.8px hsl(var(--shadow-color) / 0.11),
+    0px 4.2px 4.7px -1.7px hsl(var(--shadow-color) / 0.11),
+    -0.1px 10.2px 11.5px -2.5px hsl(var(--shadow-color) / 0.11);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -144,6 +149,10 @@ body {
 }
 
 /* landing page stuff */
+
+.landing-page img {
+  box-shadow: var(--shadow-elevation-medium);
+}
 
 /* case study font */
 
