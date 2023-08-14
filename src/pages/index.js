@@ -173,7 +173,7 @@ export default function Home() {
             Workflow logs allow you to review previous executions and diagnose
             workflow failures
           </Typography>
-          <img src="img/graphs/workflow.png" style={{ borderRadius: "8px" }} />
+          <img src="gif/logs.gif" style={{ borderRadius: "8px" }} />
         </Box>
         <Box sx={{ marginBottom: "140px" }}>
           <Typography
