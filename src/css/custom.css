@@ -91,6 +91,14 @@ p {
   box-shadow: none;
 }
 
+.navbar__logo {
+  height: 24px;
+}
+
+.navbar__toggle {
+  color: var(--ifm-color-primary-darkest);
+}
+
 @media (max-width: 996px) {
   .navbar__link {
     display: none;
