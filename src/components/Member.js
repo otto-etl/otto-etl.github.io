@@ -1,23 +1,32 @@
 import React from "react";
 import Avatar from "@mui/material/Avatar";
-import { Container } from "@mui/system";
-import { Box } from "@mui/system";
-import { Stack } from "@mui/system";
+import { Stack, Container, Box, Typography } from "@mui/material";
+
 const Member = ({ member }) => {
   return (
-    <Container>
+    <Box>
       <Avatar
         src={member.image}
         alt={member.name}
         sx={{ width: 200, height: 200, margin: "0 auto" }}
       />
-      <h3>{member.name}</h3>
+      <Typography
+        variant="h3"
+        sx={{
+          fontSize: "20px",
+          fontWeight: 700,
+          margin: "16px 0",
+        }}
+      >
+        {member.name}
+      </Typography>
       <Stack
         direction="row"
         spacing={1.5}
-        maxWidth="auto"
+        width="240px"
         alignItems="center"
         justifyContent="center"
+        sx={{ margin: "0 auto" }}
       >
         <a href={member.website} target="_blank">
           <svg
@@ -90,7 +99,7 @@ const Member = ({ member }) => {
           </svg>
         </a>
       </Stack>
-    </Container>
+    </Box>
   );
 };
 

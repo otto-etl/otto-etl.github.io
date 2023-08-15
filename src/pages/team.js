@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "@theme/Layout";
 import Member from "../components/member";
-import Stack from "@mui/material/Stack";
+import { Typography, Stack } from "@mui/material";
 
 import { Container } from "@mui/system";
 const team = [
@@ -46,20 +46,46 @@ const Team = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
-          gap: "30px",
-          marginTop: "60px",
-          overflow: "scroll",
+          marginTop: "40px",
+          justifyContent: "center",
+          "@media (min-width:640px)": {
+            marginTop: "60px",
+          },
+          "@media (min-width:1024px)": {
+            marginTop: "80px",
+          },
         }}
       >
-        <h1>otto ETL Development Team</h1>
+        <Typography
+          variant="h1"
+          sx={{
+            fontSize: "36px",
+            color: "var(--ifm-color-primary)",
+            fontWeight: 600,
+            textAlign: "center",
+            "@media (min-width:640px)": {
+              fontSize: "48px",
+            },
+          }}
+        >
+          Otto Development Team
+        </Typography>
         <Stack
-          sx={{ mt: 10 }}
-          direction="row"
-          spacing={1.5}
-          maxWidth="auto"
-          textAlign="center"
-          alignItems="center"
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "50px",
+            marginTop: "50px",
+            textAlign: "center",
+
+            "@media (min-width:640px)": {
+              flexDirection: "row",
+
+              flexWrap: "wrap",
+              justifyContent: "center",
+            },
+            "@media (min-width:1024px)": {},
+          }}
         >
           {team.map((member) => (
             <Member key={member.name} member={member} />
