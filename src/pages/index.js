@@ -68,7 +68,7 @@ export default function Home() {
         </Link>
         <Box sx={{ marginBottom: "150px" }}>
           <img
-            src="gif/homepage_workflow_fast.gif"
+            src="gif/homepage_workflow_copy.gif"
             style={{ borderRadius: "8px" }}
           />
         </Box>

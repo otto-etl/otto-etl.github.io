@@ -17,8 +17,8 @@ const Presentation = () => {
           marginTop: "60px",
         }}
       >
-        <h1>otto ETL Presentation</h1>
-        <iframe
+        <h1>otto ETL Presentation (Coming Soon!)</h1>
+        {/* <iframe
           width="560"
           height="315"
           src="https://www.youtube.com/embed/uHGShqcAHlQ"
@@ -26,7 +26,7 @@ const Presentation = () => {
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
-        ></iframe>
+        ></iframe> */}
       </Container>
     </Layout>
   );
