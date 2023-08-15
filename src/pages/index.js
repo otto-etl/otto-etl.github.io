@@ -16,7 +16,13 @@ export default function Home() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          marginTop: "80px",
+          marginTop: "40px",
+          "@media (min-width:640px)": {
+            marginTop: "60px",
+          },
+          "@media (min-width:1024px)": {
+            marginTop: "80px",
+          },
         }}
       >
         <Typography
@@ -42,9 +48,13 @@ export default function Home() {
             textAlign: "center",
             fontSize: "18px",
             maxWidth: "460px",
-            marginTop: "50px",
+            marginTop: "25px",
             "@media (min-width:640px)": {
               fontSize: "22px",
+              marginTop: "40px",
+            },
+            "@media (min-width:1024px)": {
+              marginTop: "50px",
             },
           }}
         >
@@ -56,9 +66,16 @@ export default function Home() {
             size="large"
             sx={{
               background: "var(--ifm-color-primary)",
-              margin: "30px 0 80px",
+              margin: "30px 0 40px",
+              fontFamily: "Inter",
               "&:hover": {
                 backgroundColor: "#2433B2",
+              },
+              "@media (min-width:640px)": {
+                margin: "30px 0 60px",
+              },
+              "@media (min-width:1024px)": {
+                margin: "30px 0 80px",
               },
             }}
             variant="contained"
@@ -66,7 +83,17 @@ export default function Home() {
             Read Case Study
           </Button>
         </Link>
-        <Box sx={{ marginBottom: "150px" }}>
+        <Box
+          sx={{
+            marginBottom: "75px",
+            "@media (min-width:640px)": {
+              marginBottom: "112px",
+            },
+            "@media (min-width:1024px)": {
+              marginBottom: "150px",
+            },
+          }}
+        >
           <img
             src="gif/homepage_workflow_copy.gif"
             style={{ borderRadius: "8px" }}
@@ -75,9 +102,15 @@ export default function Home() {
         <Box
           sx={{
             background: "#f1f4fd",
-            padding: "140px 20px",
+            padding: "50px 20px",
             width: "100%",
             borderRadius: 4,
+            "@media (min-width:640px)": {
+              padding: "100px 20px",
+            },
+            "@media (min-width:1024px)": {
+              padding: "140px 20px",
+            },
           }}
         >
           <Typography
@@ -117,7 +150,17 @@ export default function Home() {
             logging and metrics.
           </Typography>
         </Box>
-        <Box sx={{ margin: "140px 0" }}>
+        <Box
+          sx={{
+            margin: "70px 0",
+            "@media (min-width:640px)": {
+              margin: "105px 0",
+            },
+            "@media (min-width:1024px)": {
+              margin: "140px 0",
+            },
+          }}
+        >
           <Typography
             variant="h2"
             sx={{
@@ -140,7 +183,13 @@ export default function Home() {
         </Box>
         <Box
           sx={{
-            marginBottom: "140px",
+            marginBottom: "70px",
+            "@media (min-width:640px)": {
+              marginBottom: "105px",
+            },
+            "@media (min-width:1024px)": {
+              marginBottom: "140px",
+            },
           }}
         >
           <Typography
@@ -175,7 +224,17 @@ export default function Home() {
           </Typography>
           <img src="gif/logs.gif" style={{ borderRadius: "8px" }} />
         </Box>
-        <Box sx={{ marginBottom: "140px" }}>
+        <Box
+          sx={{
+            marginBottom: "70px",
+            "@media (min-width:640px)": {
+              marginBottom: "105px",
+            },
+            "@media (min-width:1024px)": {
+              marginBottom: "140px",
+            },
+          }}
+        >
           <Typography
             variant="h2"
             sx={{
