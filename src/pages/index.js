@@ -101,7 +101,8 @@ export default function Home() {
         </Box>
         <Box
           sx={{
-            background: "#f1f4fd",
+            background: "var(--ifm-color-primary-ottobg)",
+            border: "1px solid var(--ifm-color-primary-ottoborder)",
             padding: "50px 20px",
             width: "100%",
             borderRadius: 4,

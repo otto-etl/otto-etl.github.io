@@ -269,8 +269,7 @@ const Features = () => {
           Load
         </Typography>
         <Typography variant="p" sx={{ fontSize: "18px" }}>
-          Load transformed data into a database of your choosing. Otto is
-          compatible with all databases.
+          Load transformed data into a PostgreSQL database.
         </Typography>
       </Box>
     </Stack>

@@ -18,7 +18,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "Runtime-Terrors-2305", // Usually your GitHub org/user name.
+  organizationName: "otto_etl", // Usually your GitHub org/user name.
   projectName: "otto_site", // Usually your repo name.
   deploymentBranch: "gh-pages",
 
