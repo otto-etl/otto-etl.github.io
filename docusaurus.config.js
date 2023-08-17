@@ -21,6 +21,7 @@ const config = {
   organizationName: "otto-etl", // Usually your GitHub org/user name.
   projectName: "otto-etl.github.io", // Usually your repo name.
   deploymentBranch: "gh-pages",
+  trailingSlash: false,
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
