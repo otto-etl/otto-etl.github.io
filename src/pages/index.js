@@ -229,10 +229,10 @@ export default function Home() {
           sx={{
             marginBottom: "70px",
             "@media (min-width:640px)": {
-              marginBottom: "105px",
+              marginBottom: "70px",
             },
             "@media (min-width:1024px)": {
-              marginBottom: "140px",
+              marginBottom: "70px",
             },
           }}
         >
@@ -271,6 +271,28 @@ export default function Home() {
           </Typography>
           <img src="img/graphs/metricsSS.png" style={{ borderRadius: "8px" }} />
         </Box>
+        <Link to="/case_study" className="hover:no-underline">
+          <Button
+            size="large"
+            sx={{
+              background: "var(--ifm-color-primary)",
+              margin: "0 0 40px",
+              fontFamily: "Inter",
+              "&:hover": {
+                backgroundColor: "#2433B2",
+              },
+              "@media (min-width:640px)": {
+                margin: "0px 0 60px",
+              },
+              "@media (min-width:1024px)": {
+                margin: "0px 0 70px",
+              },
+            }}
+            variant="contained"
+          >
+            Read Case Study
+          </Button>
+        </Link>
       </Container>
     </Layout>
   );
