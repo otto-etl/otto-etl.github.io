@@ -7,7 +7,7 @@ const Presentation = () => {
   return (
     <Layout
       title="Presentation"
-      description="Presentation of the otto ETL Project"
+      description="Presentation of the Otto ETL Project"
     >
       <Container
         sx={{

@@ -165,12 +165,21 @@ body {
   box-shadow: var(--shadow-elevation-medium);
 }
 
-/* case study font */
-
 article {
   max-width: 800px;
+
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 996px) {
+  article {
+    margin-top: 60px;
+  }
+
+  .col.col--3 {
+    margin-top: 60px;
+  }
 }
 
 /* Center and add margin to top/bottom of diagrams */
@@ -255,4 +264,8 @@ article > div.theme-doc-markdown.markdown img {
   li {
     font-size: 1rem;
   }
+}
+
+.toggleButton_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
+  color: var(--ifm-navbar-link-color);
 }

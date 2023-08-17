@@ -1,6 +1,6 @@
 ---
 title: Case Study
-description: otto ETL Technical Case Study - Challenges, System Design, and Engineering Decisions
+description: Otto ETL Technical Case Study - Challenges, System Design, and Engineering Decisions
 ---
 
 import ImageBox from "@site/src/components/ImageBox.js";
@@ -404,7 +404,7 @@ Now that workflows could run without direct user input, we wanted to give users 
 
 We first created an execution table in our database that stores data about past executions in a JSONB column. Inside is a workflow object with nodes and edges arrays that contain user input data for each node at the time of execution, the returned data and/or error(s) from the execution, and how the nodes were connected. Sending these data to the client allows the client to display an exact recreation of the state of the workflow at the time of execution.
 
-<ImageBox caption="Execution table data structure" src="executionTable.png" />
+<ImageBox caption="Execution table data structure" src="executionTable2.png" />
 
 We then had to decide on how to communicate these data to the client. We want our user to be able to view logs of the workflow immediately after the workflow was executed, even when the execution was done via cron job. We considered three options: WebSockets, server-sent events, and client-side polling. WebSocket is a computer communications protocol that provides two way communication over a single long-lived TCP connection. Server-sent events is a server push technology that enables a server to send automatic updates to a client over HTTP after an initial client connection is established. Client-side polling involves the client sending regular requests to the server at predefined intervals to query for new data. We chose server-sent events because:
 

@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "otto ETL",
+  title: "Otto ETL",
   tagline: "An open-source light ETL workflow automation tool",
   favicon: "img/favicon.ico",
 
@@ -92,7 +92,7 @@ const config = {
           },
 
           {
-            href: "https://github.com/Runtime-Terrors-2305",
+            href: "https://github.com/otto-etl",
             label: "GitHub",
             position: "right",
           },
