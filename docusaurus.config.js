@@ -11,15 +11,15 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://github.com",
+  url: "https://otto-etl.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/otto_etl/",
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "otto_etl", // Usually your GitHub org/user name.
-  projectName: "otto_site", // Usually your repo name.
+  organizationName: "otto-etl", // Usually your GitHub org/user name.
+  projectName: "otto-etl.github.io", // Usually your repo name.
   deploymentBranch: "gh-pages",
 
   onBrokenLinks: "throw",
