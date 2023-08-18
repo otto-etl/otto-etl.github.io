@@ -26,7 +26,7 @@ const team = [
     image: "img/members/Katherine.jpeg",
     website: "/",
     github: "https://github.com/katstasaph",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/katherine-morayati-a1a220288/",
     email: "katherinemorayati@gmail.com",
   },
   {
