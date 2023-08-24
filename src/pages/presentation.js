@@ -38,28 +38,15 @@ const Presentation = () => {
         >
           Otto Presentation
         </Typography>
-        <Typography
-          variant="h1"
-          sx={{
-            fontSize: "36px",
-            fontWeight: 600,
-            textAlign: "center",
-            "@media (min-width:640px)": {
-              fontSize: "30px",
-            },
-          }}
-        >
-          Coming Soon!
-        </Typography>
-        {/* <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/uHGShqcAHlQ"
+        <iframe
+          width="650"
+          height="400"
+          src="https://www.youtube.com/embed/s0p7SC392L4?si=1ShbYJuEUHixKBjn"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
-        ></iframe> */}
+        ></iframe>
       </Container>
     </Layout>
   );

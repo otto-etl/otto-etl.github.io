@@ -269,3 +269,11 @@ article > div.theme-doc-markdown.markdown img {
 .toggleButton_node_modules-\@docusaurus-theme-classic-lib-theme-ColorModeToggle-styles-module {
   color: var(--ifm-navbar-link-color);
 }
+
+@media screen and (max-width: 750px) {
+  iframe {
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+  }
+}

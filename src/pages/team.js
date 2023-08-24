@@ -8,7 +8,7 @@ const team = [
   {
     name: "Jing Zhu",
     image: "img/members/Jing.jpeg",
-    website: "",
+    website: "https://jingzwork.space/",
     github: "https://github.com/JingZhu89",
     linkedin: "https://www.linkedin.com/in/jingzhumsscm/",
     email: "jing.harrell@gmail.com",
@@ -16,15 +16,15 @@ const team = [
   {
     name: "Joe Webster",
     image: "img/members/Joe.jpeg",
-    website: "/",
+    website: "https://joeswebster.com/",
     github: "https://github.com/joewebsta",
-    linkedin: "linkedin.com/in/joeswebster/",
+    linkedin: "https://www.linkedin.com/in/joeswebster/",
     email: "Joseph.scott.webster@gmail.com",
   },
   {
     name: "Katherine Morayati",
     image: "img/members/Katherine.jpeg",
-    website: "/",
+    website: "http://katherinemorayati.com/",
     github: "https://github.com/katstasaph",
     linkedin: "https://www.linkedin.com/in/katherine-morayati-a1a220288/",
     email: "katherinemorayati@gmail.com",
