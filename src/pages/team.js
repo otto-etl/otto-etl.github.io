@@ -32,7 +32,7 @@ const team = [
   {
     name: "Matthew Sisserson",
     image: "img/members/Mat.jpeg",
-    website: "/",
+    website: "https://masisserson.dev/",
     github: "https://github.com/MASisserson",
     linkedin: "https://linkedin.com/in/matthew-sisserson-077b54a0",
     email: "masisserson@gmail.com",
